@@ -1,0 +1,20 @@
+[project]
+name = "coop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dosetapped", email = "mike.abifadel@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.3",
+    "gunicorn>=26.2.0",
+]
+
+[project.scripts]
+coop = "coop:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
